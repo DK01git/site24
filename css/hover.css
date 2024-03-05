@@ -1,0 +1,19 @@
+.scale{
+    transition: all 0.5s ease;
+}
+
+.get-started-button{
+    transition: all 0.5s ease !important;
+}
+
+.get-started-button:hover{
+    box-shadow: 5px 6px 110px 10px rgba(164, 172, 202, .5);
+}
+
+.scale:hover{
+    transform: scale(1.05);
+}
+
+.team-card{
+    overflow: visible !important;
+}
