@@ -285,3 +285,282 @@ p {
 #myModal3 .form:hover img {
   transform: scale(1.1);
 }
+
+/* team */
+
+.team {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.team .team-card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  justify-content: end;
+
+}
+
+.team-card img{
+  z-index: 2;
+  height: 300px;
+  object-fit: cover;
+  transition: all ease-in-out 0.3s;
+  transform-origin: bottom;
+}
+
+.team-card img:hover{
+  scale: 1.05;
+}
+
+.team .team-card .item{
+  position: relative;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.team-card-bg {
+  position: absolute;
+  background-color: #3898ec;
+  width: 100%;
+  height: 90px;
+  bottom: 0;
+  z-index: 1;
+  border-radius: 20px;
+}
+
+.team-card p{
+  color: #fff;
+  font-family: DM Sans, sans-serif;
+}
+
+.team-member-title{
+  font-size: 20px;
+  font-weight: 700;
+  color: #3898ec !important;
+}
+
+
+/*-----news-----*/
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.news-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: white;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+
+.news-card:hover {
+  transform: scale(1.05);
+}
+
+.news-image {
+  width: 100%;
+  height: 200px !important;
+  object-fit: cover;
+}
+
+.news-title {
+  font-size: 1.2rem;
+  margin: 10px;
+}
+
+.learningContent{
+  padding: 30px;
+}
+
+.news-excerpt {
+  font-size: 0.9rem;
+  margin: 10px;
+  color: #666;
+  text-align: left;
+}
+
+.news-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.news-popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 80%;
+  max-height: 80%;
+  overflow-y: auto;
+}
+
+.news-popup-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.close-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.news-popup-content h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.news-popup-content h2 {
+  font-size: 1.5em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.news-popup-content p {
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+.news-popup-content ul, .news-popup-content ol {
+  margin-bottom: 1em;
+  padding-left: 2em;
+}
+
+.news-popup-content blockquote {
+  border-left: 4px solid #ccc;
+  padding-left: 1em;
+  margin-left: 0;
+  color: #666;
+}
+
+.news-popup-content code {
+  background-color: #f4f4f4;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+}
+
+.news-popup-content pre {
+  background-color: #f4f4f4;
+  padding: 1em;
+  overflow-x: auto;
+}
+
+.news-popup-content img {
+  max-width: 100%;
+}
+
+.featured-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.news-popup-content img{
+  border-radius: 20px ;
+}
+
+.news-card button{
+  margin: 10px auto 0 auto;
+  width: fit-content;
+  background-color: #666;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+  transform: scale(1.05);
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.lightbox-image {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  font-size: 2rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.lightbox-nav.prev {
+  left: 1rem;
+}
+
+.lightbox-nav.next {
+  right: 1rem;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+[x-cloak]{
+  display: none;
+}
