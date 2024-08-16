@@ -956,7 +956,8 @@ textarea.w-select {
 }
 .w-slider-mask-2 {
   position: relative;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   gap: 30px;
   overflow: hidden;
